@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  run-api-locally:
+    container_name: api-local-starter
+    restart: "no"
+    image: tianon/true
+    depends_on:
+      - api
+
+  api:
+    container_name: api
+    build:
+      context: .
+    restart: unless-stopped
+    command: poetry run flask run
+    volumes:
+      - .:/app-workspace
+    ports:
+      - "4001:5000"
+    env_file:
+      - .env

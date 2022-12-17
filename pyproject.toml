@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "Flask-api-SUSU"
+version = "0.1.0"
+description = ""
+authors = [
+    "... <...>",
+]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "3.10.6"
+requests = "2.27.1"
+flask = "2.2"
+pillow = "^9.3.0"
+numpy = "^1.23.5"
+uuid6 = "^2022.10.25"
