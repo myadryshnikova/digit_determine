@@ -17,4 +17,4 @@ POST - http://localhost:4001/api/digit/determine
 
 `Endpoint to write photos to a folder:`
 
-POST - http://localhost:4001/api/digit/save_photo_label/<label>
+POST - http://localhost:4001/api/digit/save_photo_label/`label:int`
